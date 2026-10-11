@@ -1,1 +1,352 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buena protección con buen aroma orgánico</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8f2;
+  color: #293b2d;
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, #174d32, #65a66a);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header .hojas { font-size: 45px; }
+
+header h1 {
+  max-width: 800px;
+  margin: 10px auto;
+  font-size: clamp(28px, 5vw, 43px);
+  line-height: 1.2;
+}
+
+header p { margin-bottom: 0; }
+
+nav {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 10px #00000012;
+}
+
+nav button {
+  border: none;
+  background: transparent;
+  color: #285a36;
+  padding: 10px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button:hover,
+nav button.activa {
+  background: #285a36;
+  color: white;
+}
+
+main {
+  max-width: 950px;
+  margin: 30px auto;
+  padding: 0 18px;
+}
+
+.seccion {
+  display: none;
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid #dce8d8;
+  box-shadow: 0 5px 20px #183c2010;
+}
+
+.seccion.activa { display: block; }
+
+h2 { color: #28613a; }
+
+h3 { color: #528353; }
+
+.portada-imagen {
+  width: 100%;
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tarjeta {
+  background: #f0f6ec;
+  border-radius: 10px;
+  padding: 17px;
+  border-left: 4px solid #65a66a;
+}
+
+.destacado {
+  background: #e7f2e3;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+a { color: #28613a; }
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #55705a;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  nav { position: static; }
+  nav button { padding: 9px; }
+  .seccion { padding: 19px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hojas">🌿 🍃 🌱</div>
+  <h1>Buena protección con buen aroma orgánico</h1>
+  <p>La naturaleza como inspiración para el cuidado personal</p>
+</header>
+
+<nav aria-label="Menú principal">
+  <button class="activa" onclick="mostrar('presentacion',this)">Presentación</button>
+  <button onclick="mostrar('investigacion',this)">Investigación</button>
+  <button onclick="mostrar('materiales',this)">Materiales</button>
+  <button onclick="mostrar('evidencias',this)">Evidencias</button>
+  <button onclick="mostrar('producto',this)">Producto</button>
+  <button onclick="mostrar('opinion',this)">Opinión</button>
+  <button onclick="mostrar('conclusiones',this)">Conclusiones</button>
+  <button onclick="mostrar('fuentes',this)">Fuentes</button>
+</nav>
+
+<main>
+
+<section id="presentacion" class="seccion activa">
+  <h2>🌿 Presentación del proyecto</h2>
+  <img class="portada-imagen"
+  src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+  alt="Naturaleza y vegetación">
+
+  <p>Bienvenidos a nuestro blog <strong>“Buena protección con buen aroma orgánico”</strong>, un proyecto dedicado a investigar las plantas aromáticas y su posible utilización en la elaboración de repelentes.</p>
+
+  <p>En lugares cálidos y húmedos, los mosquitos pueden convertirse en una molestia y algunas especies pueden transmitir enfermedades como el dengue. Por esta razón, es importante conocer las medidas de prevención y las características de los productos repelentes.</p>
+
+  <p>Mediante esta investigación buscamos comprender el potencial de ingredientes vegetales, como la citronela y otras plantas aromáticas, y conocer las precauciones necesarias para desarrollar una propuesta responsable.</p>
+
+  <div class="destacado">
+    <strong>Objetivo general:</strong> investigar el potencial de los ingredientes de origen vegetal en los repelentes aromáticos y promover el cuidado personal y ambiental.
+  </div>
+</section>
+
+<section id="investigacion" class="seccion">
+  <h2>🔬 Investigación</h2>
+  <h3>¿Qué es un repelente orgánico?</h3>
+  <p>En este proyecto llamamos repelente orgánico a una propuesta elaborada a partir de ingredientes de origen vegetal. La palabra orgánico no significa que el producto esté certificado ni que su eficacia esté demostrada.</p>
+
+  <h3>¿Cómo funciona?</h3>
+  <p>Los repelentes dificultan que los mosquitos localicen y piquen a las personas. Su eficacia depende del ingrediente activo, la concentración y la formulación. Algunos ingredientes vegetales tienen propiedades repelentes estudiadas, pero no todas las preparaciones caseras ofrecen una protección confiable.</p>
+
+  <div class="tarjetas">
+    <div class="tarjeta">
+      <h3>🍋 Citronela</h3>
+      <p>Planta aromática de olor cítrico utilizada en determinadas formulaciones repelentes.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>🌿 Eucalipto</h3>
+      <p>Algunas sustancias obtenidas de especies específicas se utilizan en repelentes evaluados científicamente.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>🌱 Hierbabuena</h3>
+      <p>Planta de aroma fresco que puede estudiarse por sus componentes aromáticos.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>💜 Lavanda</h3>
+      <p>Planta conocida por su fragancia floral. Su aroma por sí solo no garantiza protección.</p>
+    </div>
+  </div>
+
+  <h3>Importancia de la prevención</h3>
+  <p>Para reducir las picaduras se recomienda usar repelentes de eficacia comprobada, seguir las instrucciones de la etiqueta, utilizar ropa adecuada y eliminar el agua estancada.</p>
+</section>
+
+<section id="materiales" class="seccion">
+  <h2>🧪 Materiales</h2>
+  <h3>Ingredientes que se investigarán</h3>
+  <ul>
+    <li>Hojas de citronela correctamente identificadas.</li>
+    <li>Hojas de hierbabuena.</li>
+    <li>Hojas de eucalipto correctamente identificadas.</li>
+    <li>Agua limpia, si corresponde al procedimiento experimental.</li>
+    <li>Una base adecuada para la formulación, seleccionada según criterios de seguridad.</li>
+  </ul>
+
+  <h3>Utensilios</h3>
+  <ul>
+    <li>Recipientes limpios.</li>
+    <li>Vaso medidor.</li>
+    <li>Utensilios de mezcla.</li>
+    <li>Embudo y envase etiquetado para muestras.</li>
+    <li>Guantes y materiales de protección apropiados.</li>
+  </ul>
+
+  <h3>Materiales de investigación</h3>
+  <ul>
+    <li>Computadora o celular.</li>
+    <li>Cuaderno para registrar observaciones.</li>
+    <li>Fuentes científicas confiables.</li>
+    <li>Cámara para documentar el proyecto.</li>
+  </ul>
+
+  <div class="destacado">
+    <strong>Precaución:</strong> una mezcla de plantas y agua no es automáticamente un repelente eficaz ni seguro para la piel. No apliques preparaciones experimentales sin una evaluación apropiada.
+  </div>
+</section>
+
+<section id="evidencias" class="seccion">
+  <h2>📸 Evidencias del proyecto</h2>
+  <p>En esta sección se documentan las etapas de investigación, organización y presentación del proyecto.</p>
+
+  <div class="tarjetas">
+    <div class="tarjeta">
+      <h3>1. Investigación</h3>
+      <p>Fotografías del equipo consultando fuentes científicas y tomando apuntes.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>2. Materiales</h3>
+      <p>Fotografías de los ingredientes y utensilios organizados.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>3. Elaboración</h3>
+      <p>Fotografías reales del procedimiento realizado bajo condiciones de seguridad.</p>
+    </div>
+    <div class="tarjeta">
+      <h3>4. Presentación</h3>
+      <p>Fotografías del producto presentado y del trabajo final.</p>
+    </div>
+  </div>
+
+  <p><strong>Importante:</strong> reemplaza estos textos por fotografías de tu propio proyecto. No presentes imágenes ilustrativas como si fueran evidencias reales.</p>
+</section>
+
+<section id="producto" class="seccion">
+  <h2>🧴 Nuestro producto</h2>
+  <p>El proyecto propone desarrollar una presentación de repelente aromático inspirada en ingredientes de origen vegetal. Su nombre es “Buena protección con buen aroma orgánico”.</p>
+
+  <h3>Características propuestas</h3>
+  <ul>
+    <li><strong>Aroma:</strong> inspirado en plantas aromáticas.</li>
+    <li><strong>Presentación:</strong> envase etiquetado con el nombre del proyecto.</li>
+    <li><strong>Origen:</strong> investigación de ingredientes vegetales.</li>
+    <li><strong>Propósito:</strong> estudiar alternativas para la prevención de picaduras.</li>
+  </ul>
+
+  <h3>Beneficios esperados</h3>
+  <p>El proyecto busca fomentar el aprendizaje científico, la creatividad y el conocimiento de las plantas aromáticas. Para afirmar que el producto repele mosquitos eficazmente, se necesitarían evaluaciones adecuadas de su eficacia y seguridad.</p>
+
+  <div class="destacado">
+    Un buen aroma es una característica agradable, pero no demuestra por sí solo que un producto proteja contra las picaduras.
+  </div>
+</section>
+
+<section id="opinion" class="seccion">
+  <h2>💬 Nuestra opinión</h2>
+  <p>Consideramos que investigar los repelentes de origen vegetal es una oportunidad para conocer las propiedades de las plantas y buscar ideas relacionadas con el cuidado personal.</p>
+
+  <p>Nos parece importante que un producto tenga un aroma agradable, porque esta característica puede influir en la preferencia de las personas. Sin embargo, creemos que el olor no debe ser más importante que la seguridad y la eficacia.</p>
+
+  <p>También pensamos que debemos aprender a utilizar los recursos naturales de manera responsable. Que un ingrediente sea natural no significa que sea completamente seguro, ya que algunas sustancias vegetales pueden causar irritación o reacciones alérgicas.</p>
+
+  <p>En nuestra opinión, los proyectos escolares deben combinar creatividad e investigación científica. Por eso, es necesario consultar fuentes confiables y reconocer las limitaciones de las preparaciones caseras.</p>
+
+  <p>En conclusión, apoyamos la investigación de alternativas vegetales siempre que se evalúen de forma responsable y se priorice la salud de las personas.</p>
+</section>
+
+<section id="conclusiones" class="seccion">
+  <h2>✅ Conclusiones</h2>
+  <ol>
+    <li>Los repelentes ayudan a reducir las picaduras cuando cuentan con eficacia comprobada y se utilizan correctamente.</li>
+    <li>Algunas plantas contienen sustancias que pueden tener propiedades repelentes.</li>
+    <li>El aroma agradable no garantiza que un producto sea eficaz.</li>
+    <li>Los ingredientes naturales también requieren precauciones de seguridad.</li>
+    <li>La investigación fomenta el conocimiento de las plantas y el cuidado responsable del ambiente.</li>
+    <li>Eliminar el agua estancada y utilizar repelentes adecuados son medidas importantes de prevención.</li>
+  </ol>
+
+  <p>Este proyecto nos permitió comprender que las ideas relacionadas con la naturaleza deben investigarse con responsabilidad. Para cumplir su propósito, un repelente debe ser agradable, pero también seguro y eficaz.</p>
+</section>
+
+<section id="fuentes" class="seccion">
+  <h2>📚 Fuentes bibliográficas</h2>
+
+  <h3>1. Centros para el Control y la Prevención de Enfermedades (CDC)</h3>
+  <p>Información sobre prevención de picaduras de mosquitos.</p>
+  <p><a href="https://www.cdc.gov/mosquitoes/es/prevention/como-prevenir-las-picaduras-de-mosquitos.html" target="_blank" rel="noopener">Consultar la página del CDC</a></p>
+
+  <h3>2. Agencia de Protección Ambiental de Estados Unidos (EPA)</h3>
+  <p>Recomendaciones para utilizar repelentes de forma segura y eficaz.</p>
+  <p><a href="https://www.epa.gov/insect-repellents/using-insect-repellents-safely-and-effectively" target="_blank" rel="noopener">Consultar la guía de la EPA</a></p>
+
+  <h3>3. Maia, M. F. y Moore, S. J. (2011)</h3>
+  <p><em>Plant-based insect repellents: a review of their efficacy, development and testing.</em> Revisión científica sobre repelentes a base de plantas.</p>
+  <p><a href="https://malariajournal.biomedcentral.com/articles/10.1186/1475-2875-10-S1-S11" target="_blank" rel="noopener">Leer el artículo científico</a></p>
+
+  <p>Estas fuentes ayudan a comprender las posibilidades y limitaciones de los repelentes vegetales y la importancia de prevenir las picaduras.</p>
+</section>
+
+</main>
+
+<footer>
+  <p>🌿 Buena protección con buen aroma orgánico</p>
+  <p>Proyecto educativo · Investigación, naturaleza y prevención</p>
+</footer>
+
+<script>
+function mostrar(id, boton) {
+  document.querySelectorAll('.seccion').forEach(function(seccion) {
+    seccion.classList.remove('activa');
+  });
+
+  document.querySelectorAll('nav button').forEach(function(b) {
+    b.classList.remove('activa');
+  });
+
+  document.getElementById(id).classList.add('activa');
+  boton.classList.add('activa');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
+
