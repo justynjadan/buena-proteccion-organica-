@@ -107,7 +107,26 @@ h3 { color: #528353; }
   padding: 17px;
   border-left: 4px solid #65a66a;
 }
+/* Galería de fotografías */
+.galeria-evidencias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
 
+.galeria-evidencias .tarjeta {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.galeria-evidencias img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+  
 .destacado {
   background: #e7f2e3;
   padding: 16px;
